@@ -1,0 +1,604 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+a, .sec-contact .btn {
+  transition: all 0.25s;
+}
+
+/*=Typography=*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.navbar a,
+.sec-about p,
+.sec-contact p {
+  text-align: center;
+}
+
+.navbar a {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar .fa-external-link {
+  font-size: 10px;
+}
+
+.navbar-default .navbar-brand {
+  color: #000;
+}
+
+.main-heading {
+  font-family: eloquent-jf-pro, serif;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 9px;
+}
+
+.container > h1 {
+  font-weight: 300;
+  text-align: center;
+  font-family: eloquent-jf-pro, serif;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: auto;
+  }
+}
+
+a.cassiegalvezdesigns {
+  font-family: eloquent-jf-pro, serif;
+  font-size: 20px;
+}
+
+.sec-folio h1 {
+  color: #942e50;
+}
+
+.sec-services h1 {
+  color: #f38968;
+}
+
+.sec-about h1 {
+  color: #fcb338;
+}
+
+.sec-contact h1 {
+  color: #942e50;
+}
+
+#footer p {
+  color: #ffffff;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  color: #363636;
+}
+
+.morelist {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  color: #363636;
+  margin: 0 0 0 30%;
+}
+
+.sec-services h2,
+.sec-services p {
+  font-weight: 300;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sec-team h2,
+.sec-team p {
+  font-weight: 300;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sec-contact .btn {
+  text-transform: uppercase;
+}
+
+.soc-media-ul a {
+  text-align: center;
+  text-decoration: none;
+}
+
+/*=Base=*/
+section {
+  padding: 5em 0;
+}
+
+footer {
+  padding: 3em 0;
+}
+
+@media screen and (max-width: 768px) and (min-width: 485px) {
+  form {
+    max-width: 70%;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+hr {
+  margin-bottom: 3em;
+  width: 7%;
+}
+
+/*=Layout=*/
+.sec-folio .row {
+  margin-bottom: 3em;
+}
+
+.sec-folio img {
+  max-width: 100%;
+}
+
+/*Header*/
+.navbar-default {
+  background-color: #fcb338;
+}
+
+.navbar .fa-external-link {
+  vertical-align: top;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #363636;
+}
+
+.navbar-default .navbar-nav > li > a:active {
+  color: #363636;
+}
+
+.navbar-brand {
+  color: #942e50 !important;
+}
+
+/*Main*/
+.sec-main {
+  position: relative;
+  height: 560px;
+  background-color: #fcb338;
+  background-size: cover;
+}
+
+.sec-main:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+}
+
+svg:not(:root) {
+  overflow: hidden;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: auto;
+}
+
+#flower {
+  fill: #ffffff;
+  animation-name: spin;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main-heading {
+  position: absolute;
+  top: 270px;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0;
+  margin: auto;
+  height: 40px;
+  color: #363636;
+}
+
+/*About*/
+.sec-about a {
+  color: #000;
+}
+
+.sec-about a:hover, .sec-about a:focus {
+  color: #363636;
+}
+
+/*Services*/
+.sec-folio {
+  background: #f9f9f9;
+}
+
+.sec-contact {
+  background: #f9f9f9;
+}
+
+.sec-myexperience {
+  background: #f9f9f9;
+}
+
+.sec-services i {
+  display: block;
+  margin: auto;
+  width: 45px;
+}
+
+.sec-services .fa-paint-brush {
+  width: 64px;
+}
+
+.sec-services .fa-code {
+  width: 68px;
+}
+
+.sec-services h2 {
+  margin: 1em 0;
+}
+
+/*Testimonials*/
+.sec-testimonials {
+  background: #f9f9f9;
+}
+
+/*Contact*/
+.sec-contact .form-control:focus {
+  border-color: #363636;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);
+}
+
+.sec-contact .btn {
+  padding: 0.5rem 1.75rem;
+  background: #000;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.sec-contact .btn:hover, .sec-contact .btn:focus {
+  background: #363636;
+  border-color: #1d1d1d;
+}
+
+/*Footer*/
+footer {
+  background: #f38968;
+}
+
+.soc-media-ul {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-media-ul li:not(:first-child) a {
+  margin-left: 1em;
+}
+
+.soc-media-ul a {
+  display: block;
+  padding: 0.5em 0.65rem;
+  font-size: 4rem;
+  color: #fff;
+  border-radius: 50%;
+  color: #fcb338;
+}
+
+.soc-media-ul a:hover, .soc-media-ul a:focus {
+  color: #363636;
+  text-decoration: none;
+}
+
+.gallery {
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: #333333;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border: 0px solid #000000;
+  margin: 10px;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: #fcb338;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #fcb338;
+  outline: none;
+}
+
+.button-group {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.button-group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.grid article {
+  background-color: #ffffff;
+  display: block;
+  float: left;
+  margin: 1%;
+  width: 23%;
+}
+
+@media (max-width: 1024px) {
+  .grid article {
+    width: 31.3%;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid article {
+    width: 48%;
+  }
+}
+
+@media (max-width: 479px) {
+  .sec-services h2 .grid article,
+  .sec-services p .grid article {
+    margin: 2% 0;
+    width: 100%;
+  }
+}
+
+.underline {
+  border-bottom: 4px solid;
+}
+
+.education {
+  border-bottom-color: #fcb338;
+}
+
+.experience {
+  border-bottom-color: #fcb338;
+}
+
+.sec-myexperience h2 {
+  padding-top: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sec-myexperience h3 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sec-myexperience p {
+  font-family: "Montserrat", sans-serif;
+}
+
+#education .history,
+#experience .history {
+  border-left: 4px solid;
+  padding: 0px 0;
+  position: relative;
+}
+
+#education .history .entry,
+#experience .history .entry {
+  padding: 0.5em 2em;
+  max-width: 64em;
+  border-radius: 0 12px 12px 0;
+  margin-bottom: 0px;
+}
+
+#education .history .entry .time,
+#experience .history .entry .time {
+  color: #bfbfbf;
+}
+
+#education .history .entry .time::before,
+#experience .history .entry .time::before {
+  content: "\2014\ [";
+}
+
+#education .history .entry .time::after,
+#experience .history .entry .time::after {
+  content: "]";
+}
+
+#education .history::after,
+#experience .history::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: -8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+#education .history {
+  border-left-color: #fcb338;
+}
+
+#education .history::after {
+  background: #fcb338;
+}
+
+#experience .history {
+  border-left-color: #fcb338;
+}
+
+#experience .history::after {
+  background: #fcb338;
+}
+
+.myhistory {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bigimage {
+  width: 100%;
+}
+
+.image {
+  overflow: hidden;
+  height: 600px;
+  width: 100%;
+}
+
+.backgroundImage {
+  overflow: hidden;
+  height: 100%;
+  background-image: url(https://raw.githubusercontent.com/cassiegzzz/underconstruction/master/img/4.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+#more {
+  background-image: url(https://i.ibb.co/QXjKxXC/IMG-4628.jpg);
+}
+
+#last {
+  background-image: url(https://raw.githubusercontent.com/cassiegzzz/underconstruction/master/img/JNS_4953.JPG);
+}
+
+@media (max-width: 767px) {
+  .backgroundImage {
+    width: 100%;
+  }
+}
+
+.modal .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #ffffff;
+  font-size: 10vh;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.img-responsive:hover {
+  cursor: pointer;
+  opacity: .7;
+  transition: opacity .3s ease-out;
+}
+
+.modal .img:hover {
+  opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */
+}
+
+@media (max-width: 767px) {
+  img#img01.modal-content {
+    margin-top: 100px;
+  }
+}
+
+.modal-content {
+  margin: auto;
+  top: auto;
+  bottom: auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
